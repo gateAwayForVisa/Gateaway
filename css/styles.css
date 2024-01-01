@@ -1094,7 +1094,10 @@ option:checked {
     margin-bottom: 2rem; /* Adjust as needed */
     text-align: center;
   }
-
+  .percentage_2 .circle-chart{
+    position: relative;
+    margin-right: 80px;
+  }
   .grid {
     justify-content: center;
   }
