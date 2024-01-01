@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ======== Favicon ======= -->
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+    <!-- ======== Boxicons ======= -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ======== Slider Js ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+    />
+
+    <!-- ======== StyleSheet ======= -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"><link rel="stylesheet" href="./style.css">
+
+    <title>Travel Website</title>
+  </head>
+  <body style="background-color:aliceblue;">
+  <div class="loader">
+    <svg class="svg-calLoader" xmlns="http://www.w3.org/2000/svg" width="230" height="230">
+        <path class="cal-loader__path" d="M86.429 40c63.616-20.04 101.511 25.08 107.265 61.93 6.487 41.54-18.593 76.99-50.6 87.643-59.46 19.791-101.262-23.577-107.142-62.616C29.398 83.441 59.945 48.343 86.43 40z" fill="none" stroke="#0099cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10 10 10 10 10 10 432" stroke-dashoffset="77"/>
+        <path class="cal-loader__plane" d="M141.493 37.93c-1.087-.927-2.942-2.002-4.32-2.501-2.259-.824-3.252-.955-9.293-1.172-4.017-.146-5.197-.23-5.47-.37-.766-.407-1.526-1.448-7.114-9.773-4.8-7.145-5.344-7.914-6.327-8.976-1.214-1.306-1.396-1.378-3.79-1.473-1.036-.04-2-.043-2.153-.002-.353.1-.87.586-1 .952-.139.399-.076.71.431 2.22.241.72 1.029 3.386 1.742 5.918 1.644 5.844 2.378 8.343 2.863 9.705.206.601.33 1.1.275 1.125-.24.097-10.56 1.066-11.014 1.032a3.532 3.532 0 0 1-1.002-.276l-.487-.246-2.044-2.613c-2.234-2.87-2.228-2.864-3.35-3.309-.717-.287-2.82-.386-3.276-.163-.457.237-.727.644-.737 1.152-.018.39.167.805 1.916 4.373 1.06 2.166 1.964 4.083 1.998 4.27.04.179.004.521-.076.75-.093.228-1.109 2.064-2.269 4.088-1.921 3.34-2.11 3.711-2.123 4.107-.008.25.061.557.168.725.328.512.72.644 1.966.676 1.32.029 2.352-.236 3.05-.762.222-.171 1.275-1.313 2.412-2.611 1.918-2.185 2.048-2.32 2.45-2.505.241-.111.601-.232.82-.271.267-.058 2.213.201 5.912.8 3.036.48 5.525.894 5.518.914 0 .026-.121.306-.27.638-.54 1.198-1.515 3.842-3.35 9.021-1.029 2.913-2.107 5.897-2.4 6.62-.703 1.748-.725 1.833-.594 2.286.137.46.45.833.872 1.012.41.177 3.823.24 4.37.085.852-.25 1.44-.688 2.312-1.724 1.166-1.39 3.169-3.948 6.771-8.661 5.8-7.583 6.561-8.49 7.387-8.702.233-.065 2.828-.056 5.784.011 5.827.138 6.64.09 8.62-.5 2.24-.67 4.035-1.65 5.517-3.016 1.136-1.054 1.135-1.014.207-1.962-.357-.38-.767-.777-.902-.893z" class="cal-loader__plane" fill="#000033"/>
+    </svg>
+</div>
+
+  
+    <!-- header -->
+    <header class="header" id="header">
+      <!-- Navigation -->
+      <div class="navigation">
+        <nav class="nav d-flex">
+          <div class="logo">
+            <a href="/">
+              <img src="./images/gateawayimages/logo.png" style="width: auto;"  />
+            </a>
+          </div>
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="#header" class="nav-link" id="home-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" id="about-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#service" class="nav-link" id="service-link">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a href="#trips" class="nav-link" id="trips-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" id="contact-link">Contact</a>
+            </li>
+            <div class="language-dropdown">
+              <label id="language-select">Language:</label>
+              <select id="language-select" onchange="changeLanguage(this.value)">
+                  <option value="en">English</option>
+                  <option value="ar">العربية</option>
+              </select>
+          </div>
+          </ul>
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div class="text-box">
+        <h1>GA</h1>
+        <h4>Gate  Away For Visa</h4>
+       </div>
+
+     <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+    
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+                <source src="./images/gateawayimages/production_id_3678380 (1080p).mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="swiper-slide">
+          <video muted loop autoplay>
+              <source src="./images/gateawayimages/pexels-c-technical-6334253 (2160p).mp4" type="video/mp4" />
+          </video>
+      </div>
+            <div class="swiper-slide">
+                <img src="./images/gateawayimages/micha-brandli-mMhJB9dMymw-unsplash (1).jpg" alt="" />
+            </div>
+    
+            <div class="swiper-slide">
+                <img src="./images/gateawayimages/ethan-sykes-EbkruEVwW5Q-unsplash.jpg" alt="hero image" />
+            </div>
+            <div class="swiper-slide">
+              <video muted loop autoplay>
+                  <source src="./images/gateawayimages/pexels-hannah-peirce-6420236 (Original).mp4" type="video/mp4" />
+              </video>
+          </div>
+            <div class="swiper-slide">
+              <img src="./images/gateawayimages/maxime-dore-Be49W4gfd6w-unsplash (1).jpg" alt="hero image" />
+          </div>
+            <div class="swiper-slide">
+                <video muted loop autoplay>
+                    <source src="./images/gateawayimages/pexels-cityxcape-5838634 (2160p).mp4" type="video/mp4" />
+                </video>
+            </div>
+
+        </div>
+    </div>
+ 
+    </header>
+
+    <main class="main">
+      <!-- About Section -->
+      <section class="section about" id="about">
+        <div class="row container">
+          <div class="col">
+            
+            <p  id="about-content"   style="font-size: 4rem; color: black;">
+              Gate Away for Visa is the premier destination for visa solutions to foreign embassies including the USA, Canada, and Schengen countries. Our specialized expertise ensures a seamless and professional visa application experience, delivering meticulous service and expert guidance throughout the process. Trust us to handle your visa needs efficiently and effectively, ensuring a smooth journey towards obtaining your desired visa.
+            </p>
+            <div class="title">
+              <h1 id="about-title">About Us</h1>
+            </div>
+          </div>
+          <div class="col">
+                  <img src="./images/gateawayimages/jaimie-harmsen-8d9jdqyGaQA-unsplash.jpg" alt="hero image" />
+          </div>
+        </div>
+      </section>
+      <!--  Service Section -->
+      <section class="section service" id="service">
+        <div class="grid">
+          <section class="percentage_1">
+            <h2  id="percentage-1-title" style="margin-bottom: 20px;">Number of clients</h2>
+            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">+1000</text>
+                <!-- <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text> -->
+              </g>
+            </svg>
+          </section>
+        
+          <section class="percentage_2">
+            <h2 style="margin-bottom: 20px;">Number of clients Accepted visas</h2>
+            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg" style="margin-left: 80px;">
+              <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle circle-chart__circle--negative" stroke="#00acc1" stroke-width="2" stroke-dasharray="85" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">+800</text>
+                <!-- <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Oh no :(</text> -->
+              </g>
+            </svg>
+          </section>
+          <section class="percentage_3">
+            <h2 style="margin-bottom: 20px; margin-left: 50px;">Review</h2>
+            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle circle-chart__circle--negative" stroke="#00acc1" stroke-width="2" stroke-dasharray="90" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">4.8 *</text>
+                <!-- <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Oh no :(</text> -->
+              </g>
+            </svg>
+          </section>
+        </div>
+      </section>
+
+      <!-- discount Section -->
+
+      <!-- Trip Section -->
+      <section class="section trip" id="trips">
+        <div class="services">
+          <h1>
+            Get Your  <br />
+            Visa With Us
+          </h1>
+          <p style="color: black;">
+            Our professional team will assist you in selecting the suitable visa to apply for, offering free consultations. The application process is handled by a highly experienced team with years of expertise in this field
+          </p>
+        </div>
+      
+        <div class="row container" style="height: 200%;">
+          <div class="swiper-container slider-3" style="height: 200%;">
+            <div class="swiper-wrapper" style="height: 200%;">
+              <div class="swiper-slide">
+                <img src="./images/gateawayimages/college.jpg" alt="hero image" />
+                <div class="overlay-container">
+                  <div class="overlay-text">Canada study <br> visa Visa for tourism to the European Union countries</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gateawayimages/paris_europe.jpg" alt="" />
+                <div class="overlay-container">
+                  <div class="overlay-text">Shengen Visa <br> Visa for tourism to the European Union countries</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gateawayimages/usa.jpg" alt="" />
+                <div class="overlay-container">
+                  <div class="overlay-text">US Visa <br> B1-B2 (Tourism-Visitor) F-1 (Study) B1-B2 </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gateawayimages/canada.jpg" alt="" />
+                <div class="overlay-container">
+                  <div class="overlay-text">
+                    <div style="display: flex; flex-direction: column; align-items: center;">Canada visitor visa
+                      <br> Booking hotels, flights, travel insurance, and submitting the application to the embassy
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gateawayimages/qatar-work (1).jpeg" alt="" />
+                <div class="overlay-container">
+                  <div class="overlay-text">Residency in Qatar<br> a two-year renewable freelance residency</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gateawayimages/coverletter.jpg" alt="" />
+                <div class="overlay-container">
+                  <div class="overlay-text">Cover Letter<br> crafted by a professional team to enhance the acceptance rate at the Canadian Embassy</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-next d-flex">
+            <i class="bx bx-chevron-right swiper-icon"></i>
+          </div>
+          <div class="custom-prev d-flex">
+            <i class="bx bx-chevron-left swiper-icon"></i>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- More Section -->
+
+
+      <!-- Contact Section -->
+      <section class="section contact" id="contact">
+        <div class="title">
+          <h1>Book your appointment!</h1>
+          <p style="color: black;">
+            Book your appointment for professional consultation with our team. Our official working hours are from Saturday to Thursday, starting from 10:00 AM until 5:00 PM
+          </p>
+        </div>
+        
+        <div class="location container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846.1399922239412!2d35.911880669652156!3d31.972832336033946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca00a32c2e911%3A0x1d6352a02dc13756!2sAl%20Karmel%2010%2C%20Amman!5e0!3m2!1sen!2sjo!4v1700840749422!5m2!1sen!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row container">
+        
+
+        <div class="social-media-section">
+          <h2 style="color: aliceblue;">Social Media</h2>
+          <ul class="socia_media">
+            <li><a href="https://www.instagram.com/gateawayforvisa/?igsh=MXhwbWh0ZDB6ajRtaA%3D%3D&fbclid=IwAR3Wnde4SxkWPT2IvyR_P61T5J3QxpT8LuCQxYK_7RISOw-TlqSC5mMeWMM"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/962797221820" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100088403765141"><i class="fa-brands fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+        <div class="contact_container">
+        <div class="col">
+          <h2>Contact Number</h2>
+          <!-- <span class="phone_number"> -->
+          <a href="tel:+962797221820" class="phone-link">797221820</a>
+        <!-- </span> -->
+        </div>
+          <div>
+            <h2 class="col">Email</h2>
+            <a style= "color: bisque;" href="">GateAwayForVisa@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ======== SwiperJS ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <!-- ======== SCROLL REVEAL ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <!-- ======== SliderJS ======= -->
+    <script src="js/slider.js"></script>
+    <!-- ======== IndexJS ======= -->
+    <script src="js/index.js"></script>
+    <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+		<script src="./js/gsap.min.js"></script>
+		<script src="./js/ScrollTrigger.min.js"></script>
+		<script src="./js/lenis.min.js"></script>
+		<script src="./js/imagesloaded.pkgd.min.js"></script>
+		<script type="module" src="./js/animations.js"></script>
+  </body>
+</html>
